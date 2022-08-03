@@ -1,0 +1,1635 @@
+﻿﻿/**
+*** -------------------------------------------------------------------------------------------------------------------------
+*** -------------------------------------------------------------------------------------------------------------------------
+*** -------------------------------------------------------------------------------------------------------------------------
+*** Header - MODELO 01 - >>>> OLD <<<<
+*** Header - GUIA
+*** Vers�o: v1.0.3
+*** -------------------------------------------------------------------------------------------------------------------------
+*** -------------------------------------------------------------------------------------------------------------------------
+*** -------------------------------------------------------------------------------------------------------------------------
+**/
+
+/* inicio header especifico para acessibilidade zoom 200% */
+header.header-fixo-acessibilidade{
+	position: relative !important;
+	width: 1000px !important;
+	float: left;
+}
+/* fim header especifico para acessibilidade zoom 200% */
+
+
+header { width: 100%; height: 94px; background: #fff url("../img/bg-header.png") repeat-x; position: fixed; *left: 0; z-index: 9999; top: 0; }
+header section.content-main { height: 47px; }
+header section.content-main div.logo { width: 30px; margin-top: 9px; margin-right: 35px; }
+
+/* ----- Busca ----- */
+header section.content-main .busca { margin-top: 8px; }
+header section.content-main .busca input.busca-header { padding: 8px 20px; width: 520px; position: relative;
+	-webkit-border-radius: 16px;
+	   -moz-border-radius: 16px;
+	        border-radius: 16px;
+}
+header section.content-main .busca-lupa { background: url("../img/ico-busca.png") center center no-repeat #fff; width: 30px; height: 29px;
+	border: 0; position: absolute; margin-top: -31px; margin-top/*\**/: 0\9; margin-left: 485px; margin-left/*\**/: 465px\9; margin-left/*\**/: 0\9;
+	-webkit-border-top-right-radius: 16px;
+	        border-top-right-radius: 16px;
+	-webkit-border-bottom-right-radius: 16px;
+	        border-bottom-right-radius: 16px;
+	         -moz-border-radius-topright: 16px;
+	         -moz-border-radius-bottomright: 16px;
+	color: transparent;
+}
+_:-moz-tree-row(hover), header section.content-main .busca-lupa { margin-top: 2px; margin-left: -35px; }
+
+/* ----- Perfil / Config ----- */
+.dados-usuario { margin-top: 10px; margin-left: 10px; margin-left/*\**/: 40px\9; }
+.dados-usuario p.nome { font-weight: bold; margin-bottom: 0; }
+.dados-usuario p.ultimo-acesso { font-size: 10px; text-transform: lowercase; }
+
+span.ico-config { width: 20px; height: 20px; background: url("../img/sprite-config.png") 0 0 no-repeat; display: block; }
+span.ico-config:hover { background-position: 0 -20px; cursor: pointer; }
+
+header section.content-main .ico-configuracoes { margin-top: 13px; margin-left: 80px; margin-left/*\**/: 40px\9; }
+
+/* ----- Diversos ----- */
+header section.content-main .btn-sair { margin-top: 16px; margin-left: 15px; }
+header section.content-main .ico-30h { width: 30px; margin-top: 9px; }
+
+/* ----- Menu ----- */
+header section nav.menu { height: 47px; }
+header section nav.menu ul { margin: 0; margin-left: -40px; }
+
+header section nav.menu ul li.mnu { height: 47px; border-right: 1px solid #fff; color: #fff; font-size: 14px; font-weight: bold;
+	display: block; float: left; margin-bottom: 0; background: none; padding-left: 0; }
+header section nav.menu ul li.mnu:first-child { border-left: 1px solid #fff; }
+
+header section nav.menu ul li.mnu.ativo,
+header section nav.menu ul li.mnu:hover { background: url("../img/bg-header-sub-ativo.png") left top repeat-x; }
+
+header section nav.menu ul li.mnu a { color: #fff; height: 47px; display: block; padding: 15px 20px 0 12px; }
+header section nav.menu ul li.mnu a:hover { text-decoration: none; color: #fff!important; }
+header section nav.menu ul li.mnu a span.seta-mnu { background: url("../img/seta-mnu-header.png") left top no-repeat; height: 6px; width: 7px;
+	display: block; float: right; margin-left: 15px; margin-top: 5px; }
+header section nav.menu ul li.mnu a { padding-right: 10px!important; }
+
+header section nav.menu ul li.mnu-produtos { width/*\**/: 200px\9; }
+
+header section nav.menu ul li.no-link { padding: 15px 12px 0 12px!important; border-left: none!important; }
+header section nav.menu ul li.no-link:hover { background: none!important; }
+
+/* ----- Sub-Menu ----- */
+
+header section nav.menu ul li .sub-mnu { position: absolute; background: #e8e8e8; border/*\**/: 1px solid #888\9; font-size: 14px;
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+	-webkit-box-shadow: 0 2px 8px #888;
+	   -mox-box-shadow: 0 2px 8px #888;
+	        box-shadow: 0 2px 8px #888;
+}
+header section nav.menu ul li .sub-mnu div.col { float: left; padding: 16px 20px 0 20px; background: #f5f6f5; !margin-left: 50px;
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+}
+header section nav.menu ul li .sub-mnu div.col.last { background: #e8e8e8; padding-right: 30px; }
+
+header section nav.menu ul li .sub-mnu div.col ul { margin: 0; margin-left: -40px; margin-bottom: 20px; }
+header section nav.menu ul li .sub-mnu div.col ul li { color: #464646; height: 20px;  list-style: none;
+	margin: 0; padding: 0; font-weight: normal; background: none; }
+
+header section nav.menu ul li .sub-mnu div.col ul li.titulo { font-weight: bold; }
+header section nav.menu ul li .sub-mnu div.col.last ul li.titulo { font-weight: bold; margin-bottom: 15px; }
+
+header section nav.menu ul li .sub-mnu div.col ul li a { color: #464646; height: 20px; padding: 0; margin: 0; }
+header section nav.menu ul li .sub-mnu div.col ul li a:hover { text-decoration: underline; color: #ec7000; }
+
+/* ----- Configura��es ----- */
+header .ico-configuracoes .content-config { position:absolute; width:120px;
+	border:1px solid #d5d5d5; z-index:9888; font-size: 12px; background: #fff; color: #373d45; margin-left: -49px; margin-top: 20px;
+    -webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+	-webkit-box-shadow: 0 2px 8px #888;
+	   -mox-box-shadow: 0 2px 8px #888;
+	        box-shadow: 0 2px 8px #888;
+}
+header .ico-configuracoes .content-config a { color: #373d45; text-decoration: underline; }
+header .ico-configuracoes .content-config a:hover { color: #ec7000; }
+header .ico-configuracoes .content-config ul { padding: 10px 0 2px 0; margin: 0 0 2px 0; }
+header .ico-configuracoes .content-config ul li { list-style: none; color: #373d45; margin-bottom: 8px; margin-left: 12px;
+	background: none; padding-left: 0;
+}
+header .ico-configuracoes .seta-msg { background: url(../img/seta-msg.png) top left; width: 25px; height: 15px;
+	position: absolute; left: 45px; top: -14px;
+}
+
+/**
+*** -------------------------------------------------------------------------------------------------------------------------
+*** -------------------------------------------------------------------------------------------------------------------------
+*** -------------------------------------------------------------------------------------------------------------------------
+*** Header - MODELO 02 - OK
+*** -------------------------------------------------------------------------------------------------------------------------
+*** -------------------------------------------------------------------------------------------------------------------------
+*** -------------------------------------------------------------------------------------------------------------------------
+**/
+
+header.bkl { width: 100%; height: 70px; background: #ee7400; position: fixed; *left: 0; z-index: 9999; }
+header.bkl div.container { /*width: 100%;*/ width: 980px; /*margin: 0px auto;*/ margin: 0 0 0 10px; }
+
+/*@media screen and (max-width: 1010px) {
+	header.bkl div.container { width: 1010px; margin: 0px auto; }
+}*/
+
+header.bkl div.logo { width: 50px; height: 50px; margin-top: 10px; margin-left: 20px; }
+
+/* ----------------- */
+/* ---- Bot�es ---- */ 
+/* ----------------- */
+/*CSS ORIGINAL DO ICONE NO MENU - fora de uso em 28/07/2016 altera��o feita para melhorias na acessibilidade chrome + nvda */
+header.bkl a.btn-nav span.ico-header { width: 30px; height: 25px; display: block; margin: 0 0 3px 20px; background: url("../img/sprite-btn-header.png") 0 0 no-repeat; }
+/*CSS DO ICONE NO MENU MODIFICADO PARA FUNCIONAR NO CHROME COM NVDA*/
+header.bkl span.ico-header { width: 30px; height: 25px; display: block; margin: 13px 0 3px 20px; background: url("../img/sprite-btn-header.png") 0 0 no-repeat; }
+header.bkl span.ico-header-menu { background-position: 0 0; }
+header.bkl  span.ico-header-ajuda{width: 59%;height: 42%;display: block;margin: 0 0 4px 21px;background: url(../img/sprite-btn-ajuda-header.png);background-repeat: no-repeat; background-position: -26px -48px;}
+#varejo header.bkl a.btn-nav span.ico-header-menu, #uniclass header.bkl a.btn-nav span.ico-header-menu, #person header.bkl a.btn-nav span.ico-header-menu, #private header.bkl a.btn-nav span.ico-header-menu { width: auto; margin-left: auto; margin-right: auto; margin-bottom: 0; font-size: 32px; height: auto; }
+#varejo header.bkl a.btn-nav span.ico-header-seguranca, #uniclass header.bkl a.btn-nav span.ico-header-seguranca, #person header.bkl a.btn-nav span.ico-header-seguranca{ background: none; font-size: 26px; }
+header.bkl a.btn-nav span.ico-header-seguranca { background-position: 0 -25px; }
+header.bkl div.btn-header { width: 70px; height: 70px; background: #cd5a10; color: #fff; border: none; font-size: 12px; font-weight: bold; display: block; margin-bottom: 0; padding-left: 0; }
+header.bkl div.btn-sair { background: #cd5a10; margin-left: 0; }
+header.bkl div.btn-ajuda { background: #ee7400; }
+
+header a.btn-nav-ajuda:hover {background-color: #cd5a10;}
+header.bkl a.btn-nav { text-decoration: none; color: #fff; height: 70px; display: block; padding: auto; padding-top: 10px; text-align: center; }
+header.bkl a.btn-nav:hover { text-decoration: none; color: #fff; }
+
+body#person header.bkl a.btn-nav{ padding-top: 13px; color: #252222}
+body#varejo header.bkl a.btn-nav{font-size: 19px;}
+/* ----------------- */
+/* ----- Menu ----- */
+/* ----------------- */
+header.bkl nav.menu { height: 70px; }
+header.bkl nav.menu ul { margin: 0; margin-left: -40px; }
+
+header.bkl nav.menu ul li.mnu { width: 70px; height: 70px; background: #cd5a10; color: #fff; border: none; font-size: 12px; font-weight: bold;
+	display: block; float: left; margin-bottom: 0; padding-left: 0; }
+
+header.bkl nav.menu ul li.mnu.ativo,
+header.bkl nav.menu ul li.mnu:hover { background-color: #cd5a10; }
+
+
+/* Menu Alta Disponibilidade */
+ul.disponibilidade { float: left; margin: 38px 0 0 0; }
+ul.disponibilidade li {	display: inline-block; padding-left: 5px; background: none; }
+ul.disponibilidade li a { border: 1px solid transparent; background-color: #cd5a10; color: #fff; padding: 8px 8px 6px 8px; }
+ul.disponibilidade li a:hover { }
+
+/* ----------------- */
+/* --- Sub-Menu --- */
+/* ----------------- */
+
+header.bkl nav.menu ul li .sub-mnu .flex-display{display:flex; display: -ms-flex; -ms-flex: auto 1;}
+
+header.bkl nav.menu ul li .sub-mnu { position: absolute; background: #e8e8e8; border/*\**/: 1px solid #888\9; font-size: 14px;
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+	-webkit-box-shadow: 0 2px 8px #888;
+	   -mox-box-shadow: 0 2px 8px #888;
+	        box-shadow: 0 2px 8px #888;
+}
+header.bkl nav.menu ul li .sub-mnu div.col { float: left; padding: 16px 20px 0 20px; background: #f5f6f5; !margin-left: 50px;
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+}
+header.bkl nav.menu ul li .sub-mnu div.col.last { background: #e8e8e8; padding-right: 30px; }
+
+header.bkl nav.menu ul li .sub-mnu div.col ul { margin: 0; margin-left: -40px; margin-bottom: 20px; }
+header.bkl nav.menu ul li .sub-mnu div.col ul li { color: #464646; height: 20px; list-style: none;
+	margin: 0; padding: 0; font-weight: normal; background: none; }
+header.bkl nav.menu ul li .sub-mnu div.col ul li.desabilitado { color: #ccc; }
+
+header.bkl nav.menu ul li .sub-mnu div.col ul li.titulo { font-weight: bold; }
+header.bkl nav.menu ul li .sub-mnu div.col.last ul li.titulo { font-weight: bold; margin-bottom: 15px; }
+
+header.bkl nav.menu ul li .sub-mnu div.col ul li a { color: #464646;  height: 20px; padding: 0; margin: 0; }
+header.bkl nav.menu ul li .sub-mnu div.col ul li a:hover { text-decoration: underline; color: #ec7000; }
+
+/* --- Sub-Menu - PJ --- */
+header.bkl nav.menu ul li .sub-mnu-pj-fixo { width: 720px; background-color: #f5f6f5; }
+header.bkl nav.menu ul li .sub-mnu-pj .line-top { width: 192px!important; }
+header.bkl nav.menu ul li .sub-mnu-pj div.col { padding: 16px 0 25px 20px!important; }
+header.bkl nav.menu ul li .sub-mnu-pj div.col ul { margin-bottom: 10px!important; }
+header.bkl nav.menu ul li .sub-mnu-pj div.col ul li { height: 28px!important; padding-right: 20px; cursor:pointer;
+    webkit-transition: all 200ms linear;
+      -moz-transition: all 200ms linear;
+       -ms-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
+           transition: all 200ms linear; }
+header.bkl nav.menu ul li .sub-mnu-pj div.col ul li:hover { color: #ec7000; }
+header.bkl nav.menu ul li .sub-mnu-pj div.col ul li.titulo:hover { color: #464646; }
+header.bkl nav.menu ul li .sub-mnu-pj div.col ul li div.col-sub { font-size: 12px; padding: 14px 20px 0 20px; width: 256px; height: 513px; margin-left: 210px; margin-top: -32px; position: absolute; border-left: 1px solid #c8c8c8; }
+header.bkl nav.menu ul li .sub-mnu-pj div.col ul li div.col-sub h2 { margin: 0; font-size: 14px; }
+header.bkl nav.menu ul li .sub-mnu-pj div.col ul li div.col-sub ul { margin-bottom: 16px!important; }
+header.bkl nav.menu ul li .sub-mnu-pj div.col ul li div.col-sub ul li { height: auto!important; margin-bottom: 5px!important; }
+header.bkl nav.menu ul li .sub-mnu-pj div.col ul li div.col-sub div.col { padding: 14px 0 0 7px!important; }
+header.bkl nav.menu ul li .sub-mnu-pj div.col ul li div.col-sub2 {  margin-left: 450px; padding-top: 30px; border: none!important; }
+
+/*.sub-mnu-pj-01 .content-sub-mnu-pj { margin-top: 0; }
+.sub-mnu-pj-02 .content-sub-mnu-pj { margin-top: -28px; }
+.sub-mnu-pj-03 .content-sub-mnu-pj { margin-top: -56px; }
+.sub-mnu-pj-04 .content-sub-mnu-pj { margin-top: -84px; }
+.sub-mnu-pj-05 .content-sub-mnu-pj { margin-top: -112px; }
+.sub-mnu-pj-06 .content-sub-mnu-pj { margin-top: -140px; }
+.sub-mnu-pj-07 .content-sub-mnu-pj { margin-top: -168px; }
+.sub-mnu-pj-08 .content-sub-mnu-pj { margin-top: -196px; }
+.sub-mnu-pj-09 .content-sub-mnu-pj { margin-top: -224px; }
+.sub-mnu-pj-10 .content-sub-mnu-pj { margin-top: -252px; }
+.sub-mnu-pj-11 .content-sub-mnu-pj { margin-top: -280px; }
+.sub-mnu-pj-12 .content-sub-mnu-pj { margin-top: -308px; }
+.sub-mnu-pj-13 .content-sub-mnu-pj { margin-top: -336px; }*/
+
+.content-sub-mnu-pj { 
+	position: fixed;
+	top: 137px;
+	margin-top: -2.5em;
+}
+
+/* ----------------- */
+/* ----- Busca ----- */
+/* ----------------- */
+header.bkl div.busca-header { margin-top: 19px; margin-left: 40px; width: 460px; *width: 420px; position: relative; }
+header.bkl div.busca-header input.busca-campo { 
+	padding: 8px 20px; 
+	position: absolute; 
+	border: 1px solid #ee7400;
+	-webkit-border-radius: 16px;
+	   -moz-border-radius: 16px;
+	        border-radius: 16px;
+}
+header.bkl div.busca-header input::-ms-clear {
+    display: none;
+}
+
+/*header.bkl div.busca-header input.busca-campo:focus { width: 690px; *width: 650px; }*/
+header.bkl div.busca-header .busca-lupa { background: #fff; width: 30px; height: 29px;
+	border: 0; position: absolute; right: 2px; top: 1px;
+	   -webkit-border-top-right-radius: 16px;
+	           border-top-right-radius: 16px;
+	-webkit-border-bottom-right-radius: 16px;
+	        border-bottom-right-radius: 16px;
+	       -moz-border-radius-topright: 16px;
+	    -moz-border-radius-bottomright: 16px;
+}
+
+header.bkl div.busca-header .busca-lupa { 
+	background: url("../img/ico-busca.png") center center no-repeat #fff;
+	width: 30px; 
+	height: 29px;
+	border: 0; 
+	position: absolute; 
+	right: 2px; 
+	top: 2px;
+	-webkit-border-top-right-radius: 16px;
+	border-top-right-radius: 16px;
+	-webkit-border-bottom-right-radius: 16px;
+	border-bottom-right-radius: 16px;
+	-moz-border-radius-topright: 16px;
+	-moz-border-radius-bottomright: 16px;
+}
+
+body#varejo header.bkl div.busca-header .busca-lupa {background: url("../img/ico-busca-font.png") center center no-repeat #fff;}
+body#uniclass header.bkl div.busca-header .busca-lupa {background: url("../img/ico-busca-font.png") center center no-repeat #fff;}
+body#person header.bkl div.busca-header .busca-lupa {background: url("../img/ico-busca-font.png") center center no-repeat #fff;}
+body#private header.bkl div.busca-header .busca-lupa {background: url("../img/ico-busca-font-private.png") center center no-repeat #fff;}
+
+
+_:-moz-tree-row(hover), header section.content-main .busca-lupa { margin-top: 2px; margin-left: -35px; }
+
+
+header.bkl div.busca-header .busca-apontar {
+	background: url("../img/sprite-icon-peq.png") no-repeat -214px -1124px #fff;
+	width: 30px; height: 29px;
+	border: 0; position: absolute; right: 2px; top: 0;
+	margin-top: 1px; margin-left: -35px;
+	-webkit-border-top-right-radius: 16px;
+	        border-top-right-radius: 16px;
+	-webkit-border-bottom-right-radius: 16px;
+	        border-bottom-right-radius: 16px;
+	         -moz-border-radius-topright: 16px;
+	         -moz-border-radius-bottomright: 16px;
+}
+
+.hide-search {}
+
+header.busca-header-exp #valor {
+  width: 240px;
+  -webkit-transition: width 200ms ease-in;
+  -moz-transition: width 200ms ease-in;
+  -ms-transition: width 200ms ease-in;
+  -o-transition: width 200ms ease-in;
+  transition: width 200ms ease-in;
+}
+
+header.busca-header-exp #codigoDeBarras {
+  width: 545px;
+  -webkit-transition: width 200ms ease-in;
+  -moz-transition: width 200ms ease-in;
+  -ms-transition: width 200ms ease-in;
+  -o-transition: width 200ms ease-in;
+  transition: width 200ms ease-in;
+}
+
+header.busca-header-exp #opcaoPoupanca {
+  width: 410px;
+  -webkit-transition: width 200ms ease-in;
+  -moz-transition: width 200ms ease-in;
+  -ms-transition: width 200ms ease-in;
+  -o-transition: width 200ms ease-in;
+  transition: width 200ms ease-in;
+}
+
+
+header.busca-header-exp #valorPoupanca {
+  width: 200px;
+  -webkit-transition: width;
+  -moz-transition: width;
+  -ms-transition: width;
+  -o-transition: width;
+  transition: width;
+}
+
+header.busca-header-exp #valorRecarga {
+  width: 150px;
+  -webkit-transition: width;
+  -moz-transition: width;
+  -ms-transition: width;
+  -o-transition: width;
+  transition: width;
+}
+
+header.busca-header-exp #finalizaRecarga {
+  width: 75px;
+  -webkit-transition: width;
+  -moz-transition: width;
+  -ms-transition: width;
+  -o-transition: width;
+  transition: width;
+}
+
+#alertaBusca{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#boletoPagamentoBadge span{
+	font-size: 11px;
+}
+
+#finalizarPagamento {
+	width: 70px;
+	transition: none;
+}
+
+
+#alertaBusca .ico-alerta-aviso2{
+	margin-top: -7px;
+	margin-left: 5px;
+}
+
+
+#acoesRapidasPoupanca{
+	margin-bottom: 0px;
+}
+
+#acoesRecargaRapida{
+	margin-top: 0px;	
+}
+
+
+/*SETA CONFIRMA A��O RAPIDA BUSCA*/
+header.bkl div.busca-header .busca-seta {
+  margin-top: 8px;
+  width: 14px;
+  height: 14px;
+  border: 0;
+  position: absolute;
+  right: 11px;
+  top: 1px;
+  z-index: 1000;
+  background: url("../img/sprite-seta-link.png") 0 -14px ;
+}
+
+/* ico ver todos resultados */
+header span.ico-busca {
+    background: url("../img/ico-busca.png") center center no-repeat;
+    width: 30px;
+    height: 25px;
+    display: block;
+    float: left;
+    margin-top: -6px;
+}
+
+@-moz-document url-prefix(){
+	#itensDefaultPj a:focus, #itensDefaultPj a:active , #lupa-busca:active, #lupa-busca:focus{
+		outline: 1px dotted black !important;
+	}
+	
+	.busca-auto-complete-scroll ul#acoesRapidasRecarga, .busca-auto-complete-scroll ul#divFavorecidosTransferencia  {
+    	margin-bottom: 25px !important;
+	}
+	
+	.busca-auto-complete-scroll ul#divFavorecidosTransferencia  {
+    	margin-bottom: 27px !important;
+	}
+	
+	ul#acoesRapidasRecarga li.linhaFavorecido{
+		padding-right: 2px;
+	}
+}
+
+:root .busca-auto-complete a:focus{
+	outline: 1px dotted black\9;
+}
+
+.divFavorecidosTransferencia{
+	margin-bottom: 0px;
+}
+
+/* ----- Auto-Complete ----- */
+.busca-auto-complete { background-color: #fff; margin: 30px 20px 0 20px; padding: 5px 10px 0 10px; border: 1px solid #ececec;
+    -webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+	-webkit-box-shadow: 0 4px 5px #e6e6e6;
+	   -moz-box-shadow: 0 4px 5px #e6e6e6;
+	        box-shadow: 0 4px 5px #e6e6e6; }
+			
+#busca-auto-complete #ul-cards-busca {
+	margin-top: -6px;
+	margin-left:-42px;
+	margin-right:-2px;
+	height: 100%;
+	margin-bottom: 0px;
+}
+
+#itensDefaultPj{
+	padding-top: 2px;
+}
+
+#busca-auto-complete #ul-cards-busca #li-cards-busca{
+	background-color: rgba(221, 221, 221, 1) !important;
+	height: 100%;
+	padding-bottom:8px;
+	border-radius:4px 4px 0 0;
+   	padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#busca-auto-complete #ul-cards-busca .card-busca{
+	padding-left:10px;
+	padding-right: 10px;
+	box-shadow: 3px 3px 5px #adabab;
+}
+
+#busca-auto-complete #ul-cards-busca .card-busca .cabecalho-card{
+	margin-top: -10px; 
+	margin-bottom: 10px; 
+	padding-bottom: 5px;
+	font-size: 18px;
+}
+
+#busca-auto-complete #ul-cards-busca .card-busca .pontos-sempre-presente{
+	font-size: 19px;margin-top: -12px;
+}
+
+#busca-auto-complete #ul-cards-busca .card-busca .links-sempre-prensete{
+	margin-top: -15px;
+}
+ 
+#busca-auto-complete #ul-cards-busca .card-busca .informacao-util-sempre-presente{
+	margin-top: 5px;
+	margin-left: 0px;
+}
+
+/*Card Investimento*/
+
+#section-card-busca > div{
+	top: 0px !important;
+}
+
+#ul-cards-busca .card-busca{
+	padding: 8px !important;
+	margin-bottom: 0px;
+	top: 0px;
+}
+
+#ul-cards-busca section{
+	margin: 7px 8px 0px 7px;
+}
+
+#ul-cards-busca .cabecalho-card .fechar.fecharCard{
+	right: 0px;
+    margin-top: -7px;
+    margin-right: -8px;
+}
+
+#ul-cards-busca .cabecalho-card{
+	margin-top: 0px !important;
+	padding-bottom: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+#ul-cards-busca small{
+	font-size: 10px;
+	font-weight: normal;
+}
+
+#ul-cards-busca .valor-card{
+	margin-top: 5px;
+	font-size: 18px !important;
+}
+
+#informacao-util-investimentos{
+	margin: 8px 0 0 17px;
+    top: 0px !important;
+}
+
+#informacao-util-feedback{
+	margin: 8px 0 0 17px;
+    top: 0px !important;
+}
+
+#informacao-util-feedback-div > div, #informacao-util-feedback, #informacao-util-feedback-div{
+	top: 0px !important;
+}
+
+#restanteCard{
+	font-size: 12px;
+}
+
+#enviarfeedback{
+	color: #FFF;
+}
+
+#linkInvestimento, #linkPoupanca, #linkPrevidencia, #informacao-util-feedback-href > a, #verExtratoPontos, #resgatarPontos{
+	display: inline-block;
+}
+
+.underline-hover:hover{
+	text-decoration:underline;
+}			
+
+#itensDefaultPj{
+	padding-top: 2px;
+}
+			
+.busca-auto-complete-scroll{
+	margin-top: 29px !important;
+	overflow:auto;
+	max-height:188px;
+	padding-bottom:30px;
+}
+
+.divTransferencia.busca-auto-complete-scroll{
+	max-height:210px !important;
+}
+
+body#uniclass .divTransferencia.busca-auto-complete-scroll{
+	max-height:210px !important;
+}
+
+.transferenciaFavorito{
+	max-height:190px !important;
+}
+
+.transferenciaFavoritoGarantida{
+	max-height:190px !important;
+	margin: 0px !important;
+    height: 48px !important;
+}
+.busca-auto-complete-scroll-cartoes{
+	overflow:auto;  
+	max-height: 352px;  
+}
+
+body#uniclass .busca-auto-complete-scroll-cartoes{
+	max-height: 352px;
+}
+
+.fechar-badge-busca{
+	display: inline-block;
+    left: 7px;
+    top: 2px;
+}
+
+body#uniclass .busca-auto-complete ul .busca-elemento-fixo {
+	position:absolute;
+	bottom: 0;
+	width:491px;
+}
+
+.busca-auto-complete ul .busca-elemento-fixo {
+	position:absolute;
+	bottom: 0;
+	width:631px;
+}
+
+.busca-auto-complete ul .busca-elemento-fixo a{
+	background: #fff
+}
+
+.busca-auto-complete ul .busca-elemento-fixo a:hover, .busca-auto-complete ul li.jqhover a{
+	background: #efefef;
+}
+
+ul li .acoes-rapidas-nome{
+	width:45%;
+}
+
+ul li .acoes-rapidas-banco, ul li .acoes-rapidas-telefone  {
+	width:25%;
+}
+
+ul li .acoes-rapidas-nome-transferencia{
+	width: 33%;
+}
+
+body#uniclass ul li .acoes-rapidas-nome-transferencia{
+	width:37%;
+}
+
+body#uniclass ul li .dados-conta-transferencia{
+	display: inline-block;
+}
+
+
+ul li .acoes-rapidas-banco-transferencia{
+	width:34%;
+}
+
+body#uniclass ul li .acoes-rapidas-banco-transferencia{
+	width:31%;
+}
+
+ul#valorRecarga {
+	width: 100%;
+    display: inline-block;
+}
+
+ul.listaOpCartao{
+    margin-left: -30px;   
+    padding-top: 4px;
+}
+
+.vizualizaFatura a{ 
+    padding-bottom: 5px!important;
+}
+
+.busca-auto-complete-scroll ul#acoesRapidasRecarga{
+	margin-bottom: 0px;
+}
+
+ul#acoesRapidasRecarga{
+	margin-top: 0px;
+}
+
+ul#acoesRapidasRecarga li.busca-elemento-fixo, ul#acoesRapidasRecarga li.linhaFavorecido{
+    margin-right: -10px;
+    margin-left: -10px;
+        padding-left: 2px;
+    padding-right: 3px;
+}
+
+ul#acoesRapidasRecarga li.linhaFavorecido{
+
+
+}
+
+ul#acoesRapidasRecarga #cadastrarContato,
+#alertaBusca .info-alerta{
+	height: 24px;
+}
+
+.busca-auto-complete .acoesRapidasErro li:hover {background-color:white !important}
+.busca-auto-complete .acoesRapidasErro  a:hover  {background-color:white !important;}
+.busca-auto-complete .acoesRapidasErro a:not(#solicitaCartao) {color:red;}
+.busca-auto-complete a { text-decoration: none; display: block; } 
+.busca-auto-complete a:hover , .busca-auto-complete li.jqhover a { color: #ec7000; text-decoration: none; }
+ 
+.busca-auto-complete li > a,
+#alertaBusca li {
+	padding: 5px; 
+}
+
+.busca-auto-complete li { /*padding: 7px;*/ padding: 0; margin: 1px -8px; background: none!important; }
+.busca-auto-complete li:hover , .busca-auto-complete li.jqhover { background-color: #efefef!important; }
+
+#busca-auto-complete ul li div{
+    position: relative;
+    top: 5px;
+}
+
+.buscaAncoraFav{
+    width: 0px;
+    height: 0px;
+    top: 10px;
+    left: 8px;
+    position: relative;
+    z-index: 998;
+}
+
+.buscaSpamFav{
+    top: -15px;
+    left: -13px;
+    position: relative;
+    margin-right: 0px !important;
+}
+
+.buscaAncoraLink{
+    position: relative;
+    top: -6px;
+    min-height: 24px;
+}
+
+#busca-auto-complete ul li a div{
+	margin-top: -6px;
+}
+
+.busca-linha {
+	border-top: 1px dashed #c8c8c8;
+	margin: 10px -10px 5px;
+	margin-bottom: 0px;
+}
+
+a#todos-resultados {
+    min-height: 27px;
+}
+
+.todos-resultados-ico-termo {
+    margin-top: -4px!important;
+    margin-left: -1px;
+}
+
+
+/* ----- Acoes Rapidas ----- */
+.acoes-rapidas { position: absolute; margin-top: 5px; z-index: 999; width: 100%;}
+.acao-rapida { padding: 4px 10px; margin-left: 4px; float: left; }
+.acao-rapida.acao-rapida-produto { background-color: #ec7000; color: #fff;
+    -webkit-border-radius: 18px 0 0 18px;
+	   -moz-border-radius: 18px 0 0 18px;
+	        border-radius: 18px 0 0 18px;
+}
+.acao-rapida.acao-rapida-dados { background-color: #efefef; }
+
+input.busca-acoes-rapidas { border: 0; font-size: 10px; padding: 5px 4px; border-radius: 0; }
+input.busca-acoes-rapidas:focus { border: 0;  : 0; color:#464646; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+
+.busca-listagem {
+    max-height: 174px;
+    margin-top: 29px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.busca-listagem table {
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+.busca-listagem table tr {
+    cursor: pointer;
+    list-style-type: none;
+    text-transform: uppercase;
+}
+.busca-listagem table tr td {
+    padding-bottom: 7px;
+    padding-top: 7px;
+}
+.busca-listagem table tr:hover {
+    background-color: #efefef;
+}
+
+#busca-contato-transferencia {
+	margin-top: -6px;
+}
+
+a.bancos {
+    height: 24px;
+    transition: none;
+}  
+
+header.busca-header-exp #nomeBanco {
+  width: 150px;
+  -webkit-transition: width;
+  -moz-transition: width;
+  -ms-transition: width;
+  -o-transition: width;
+  transition: width;
+}
+
+header.busca-header-exp #valorTransferencia {
+  width: 80px;
+  -webkit-transition: width;
+  -moz-transition: width;
+  -ms-transition: width;
+  -o-transition: width;
+  transition: width;
+}
+
+header.busca-header-exp #enterFinal {
+  width: 80px;
+  -webkit-transition: width;
+  -moz-transition: width;
+  -ms-transition: width;
+  -o-transition: width;
+  transition: width;
+}
+
+.busca-auto-complete-scroll-bancos{
+	overflow:auto;  
+	height: 181px;
+	overflow-x: hidden;
+}
+
+ul#acoesRapidasBancos {
+    margin-top: -3px;
+}
+
+#busca-auto-complete #busca-acoes-rapidas{
+	margin-bottom: -12px;
+	margin-top: 0px;
+}
+
+ul#busca-acoes-rapidas li{
+	height:29px;
+	padding-top:3px;
+}
+
+.fixaCadastroFavorecido {
+	margin-top: -2px;
+	height: 29px;
+	border-width: 0px;
+	border-top: 1px dashed #bbb
+}
+
+.fixaCadastroFavorecido div {
+	margin-left: 0px;
+}
+
+.fixaCadastroFavorecido li a {
+	margin-top: -5px;
+}
+
+.excluiDataTransfRapida{
+    right: -4px;
+    margin-top: 2px;
+    transition: none;
+}
+
+.favorecido{
+	margin: 0px 1px;	
+}
+/* ----------------- */
+/*  Busca A��es 	 */
+/* ----------------- */
+
+.ico-configuracoes,
+.info-login {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	visibility: visible;
+	-webkit-transition: opacity .26s .2s, visible .26s .1s;
+	-moz-transition: opacity .26s .2s, visible .26s .1s;
+	-ms-transition: opacity .26s .2s, visible .26s .1s;
+	-o-transition: opacity .26s .2s, visible .26s .1s;
+	transition: opacity .26s .2s, visible .26s .1s;
+}
+
+header.busca-header-exp div.busca-header {
+	width: 690px;
+	-webkit-transition: width 200ms ease-in;
+    -moz-transition: width 200ms ease-in;
+    -ms-transition: width 200ms ease-in;
+    -o-transition: width 200ms ease-in;
+    transition: width 200ms ease-in;
+}
+
+.busca-header-exp .ico-configuracoes,
+.busca-header-exp .info-login, .busca-header-exp .btn-header-ajuda {
+	position: absolute;
+	left: -999em;
+	top: -999em;
+	opacity: 0;
+	visibility: hidden;
+	filter: alpha(opacity=0);
+	-webkit-transition: opacity .26s, hidden .26s;
+	-moz-transition: opacity .26s, hidden .26s;
+	-ms-transition: opacity .26s, hidden .26s;
+	-o-transition: opacity .26s, hidden .26s;
+	transition: opacity .26s, hidden .26s;
+}
+
+/* ---------------------- */
+/*  Loader Busca - INICIO */
+/* ---------------------- */
+
+header div.busca-header .loader-busca {
+	width: 20px;
+	margin-left: 630px; 
+	margin-top: 6px; 
+	position: absolute; 	
+	background-color: white;
+}
+
+body#empresas header div.busca-header .loader-busca,
+body#poderPublico header div.busca-header .loader-busca,
+body#institucionais header div.busca-header .loader-busca,
+body#demaisEmpresas header div.busca-header .loader-busca,
+body#ibba header div.busca-header .loader-busca
+{
+	margin-left: 497px; 	
+}
+
+body#uniclass header div.busca-header .loader-busca
+{
+	margin-left: 497px;
+}
+
+body#person header div.busca-header .loader-busca
+{
+	margin-left: 635px;
+}
+/* ---------------------- */
+/*  Loader Busca - FIM    */
+/* ---------------------- */
+
+/* ----------------- */
+/* - Config/Perfil - */
+/* ----------------- */
+header.bkl span.ico-config { width: 32px; height: 32px; background: none; display: block; border: 1px solid #919085;}
+
+body#ibba header.bkl span.ico-config { width: 36px; height: 34px; background: none; display: block; border: 0;}
+body#empresas header.bkl span.ico-config { width: 36px; height: 34px; background: none; display: block; border: 0;}
+
+header.bkl span.ico-config img { border: none; border-radius: 4px; background: #FFF; font-size: 24px;
+color: #605751;
+line-height: 24px;}
+
+header section.content-main .ico-configuracoes { margin-top: 13px; margin-left: 80px; margin-left/*\**/: 40px\9; }
+header.bkl .ico-configuracoes { margin-top: 19px; margin-left: 20px; *margin-left: 60px;  }
+
+body#ibba header.bkl .ico-configuracoes { margin-top: 18px; margin-left: 20px; *margin-left: 60px; }
+body#empresas header.bkl .ico-configuracoes { margin-top: 18px; margin-left: 20px; *margin-left: 60px; }
+
+header.bkl .ico-configuracoes .content-config { position:absolute; width: 234px;    
+	border:1px solid #d5d5d5; z-index:9888; font-size: 12px; background: #fff; color: #464646; margin-left: -96px; margin-top: 16px;
+    -webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px;
+	-webkit-box-shadow: 0 2px 8px #888;
+	   -mox-box-shadow: 0 2px 8px #888;
+	        box-shadow: 0 2px 8px #888;
+}
+
+body#empresas header.bkl .ico-configuracoes .content-config, 
+body#ibba header.bkl .ico-configuracoes .content-config { 
+	position:absolute; 
+	width: 340px;    
+	border:1px solid #d5d5d5; 
+	z-index:9888; 
+	font-size: 12px; 
+	background: #fff; 
+	margin-left: -33px;
+	margin-top: 16px;
+	color: #373d45; 
+    -webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 2px 8px #888;
+	-mox-box-shadow: 0 2px 8px #888;
+	box-shadow: 0 2px 8px #888;
+}
+
+header.bkl .ico-configuracoes .content-config a.btn { color: #fff; text-decoration: none; margin-left: 0; }
+header.bkl .ico-configuracoes .seta-msg { background: url(../img/seta-msg.png) top left; width: 25px; height: 15px;
+	position: absolute; left: 99px; top: -14px;
+}
+
+body#empresas header.bkl .ico-configuracoes .seta-msg, 
+body#ibba header.bkl .ico-configuracoes .seta-msg { 
+	background: url(../img/seta-msg.png) top left; 
+	width: 25px; 
+	height: 15px;
+	position: absolute; 
+	left: 37px; 
+	top: -14px;
+}
+
+header.bkl .ico-configuracoes .content-config .dados { padding: 16px; }
+
+body#empresas header.bkl .ico-configuracoes .content-config .dados,
+body#ibba header.bkl .ico-configuracoes .content-config .dados { padding: 15px; }
+
+
+
+
+header.bkl .ico-configuracoes .content-config .dados .foto-perfil { }
+header.bkl .ico-configuracoes .content-config .dados .foto-perfil .moldura { border: 1px solid #c8c8c8;
+	-webkit-border-radius: 6px;
+	   -moz-border-radius: 6px;
+	        border-radius: 6px; }
+header.bkl .ico-configuracoes .content-config .dados .foto-perfil .link { text-align: center; text-transform: lowercase; }
+header.bkl .ico-configuracoes .content-config .dados .foto-perfil a { font-size: 10px; }
+
+header.bkl .ico-configuracoes .content-config .dados .dados-perfil {
+	margin-left: 0px;
+    width: 100%;	
+}
+
+header.bkl .ico-configuracoes .content-config .dados .dados-perfil .nome { 
+	font-weight: normal;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #C8C8C8;
+	line-height: 16px;	
+	margin: 0px;	
+}
+header.bkl .ico-configuracoes .content-config .dados .dados-perfil .titulo { 
+	margin-top: 0px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    color: #464646;
+	padding-bottom: 8px;
+	margin: 0px;
+}
+
+body#ibba header.bkl .ico-configuracoes .content-config .dados .dados-perfil .titulo { 
+	margin-top: 8px;
+    font-family: Arial;    
+    font-size: 12px;
+    color: #373d45;
+	padding-bottom: 3px;	
+}
+
+body#empresas header.bkl .ico-configuracoes .content-config .dados .dados-perfil .titulo { 
+	margin-top: 8px;
+    font-family: Arial;    
+    font-size: 12px;
+    color: #373d45;
+	padding-bottom: 3px;	
+}
+
+header.bkl .ico-configuracoes .content-config .dados .dados-perfil .info { 
+    font-size: 12px;    
+    padding-bottom: 16px;
+    border-bottom: 1px solid #C8C8C8;
+	line-height: 16px;
+	margin: 0px;
+}
+
+body#ibba header.bkl .ico-configuracoes .content-config .dados .dados-perfil .info { 
+    font-size: 11px;    
+    padding-bottom: initial;
+    border-bottom: 0;
+	line-height: 14px;
+	margin: 0 0 5px 0;
+	text-transform: lowercase;
+	margin-top: -2px;
+}
+
+body#empresas header.bkl .ico-configuracoes .content-config .dados .dados-perfil .info { 
+    font-size: 11px;    
+    padding-bottom: initial;
+    border-bottom: 0;
+	line-height: 14px;
+	margin: 0 0 5px 0;
+	text-transform: lowercase;
+	margin-top: -2px;
+}
+
+header .ico-configuracoes .content-config a.itau-button {
+	width: 202px;
+}	
+
+body#empresas header .ico-configuracoes .content-config a.itau-button, 
+body#ibba header .ico-configuracoes .content-config a.itau-button {
+	width: auto;
+}
+
+header.bkl .ico-configuracoes .content-config .login { 
+	font-size: 12px; 
+	text-align: center; 
+	padding: 8px 10px 14px; 
+	border-top: none;
+}
+
+body#empresas header.bkl .ico-configuracoes .content-config .login,
+body#ibba header.bkl .ico-configuracoes .content-config .login { 
+	font-size: 9px; 
+	text-align: right; 
+	padding: 3px 10px ; 
+	border-top: 1px solid #c8c8c8;
+}
+
+header.bkl .ico-configuracoes .content-config .login p.ultimo-acesso { font-size: 11px; text-transform: lowercase; }
+
+body#empresas header.bkl .ico-configuracoes .content-config .login p.ultimo-acesso,
+body#ibba header.bkl .ico-configuracoes .content-config .login p.ultimo-acesso { 
+font-size: 10x; 
+text-transform: lowercase; 
+}
+
+/* ----------------- */
+/* -- Info Login  -- */
+/* ----------------- */
+header.bkl .info-login { margin-left: 19px; margin-top: 19px; margin-right: 20px;}
+header.bkl .info-login p.info-conta { border: 1px solid transparent; background: #fff; color: #464646; font-weight: bold; padding: 8px 10px;
+	-webkit-border-radius: 2px;
+	   -moz-border-radius: 2px;
+	        border-radius: 2px;
+}
+
+body#uniclass header.bkl .info-login p.info-conta{
+	border: 1px solid #747679;
+	font-weight: bold;
+	color: #464646;
+}
+
+header.bkl .info-login p.nome { font-weight: bold; margin-bottom: 0; }
+
+header.bkl .info-login .info-conta-select { text-align: right; width: 150px;  }
+
+/* ----------------- */
+/* - Custom Select - */
+/* ----------------- */
+header.bkl .custom-select select, header.bkl .info-login p.info-conta { 
+	font-weight: bold; 
+	border: 1px solid #919085; 
+	background: #fff; 
+	color: #464646; 
+	font-weight: bold; 
+	padding: 8px 10px; 
+	-webkit-border-radius: 2px; 
+	-moz-border-radius: 2px; 
+	border-radius: 2px; 
+}
+body#varejo header.bkl .custom-select select,
+body#varejo header.bkl .info-login p.info-conta {border: 1px solid transparent; border-radius: 4px; }
+body#uniclass header.bkl .custom-select select{border-color: #747679; color: #464646;}
+body#person header.bkl .custom-select select { color: #876632; border-color: #876632; }
+body#private header.bkl .custom-select select { color: #464646; border-color: #5F5E55; }
+
+header.bkl .chosen-container {width: 220px !important; text-align:left}
+header.bkl .chosen-container .chosen-drop {white-space: nowrap; width: auto; min-width: 220px}
+/**
+*** -------------------------------------------------------------------------------------------------------------------------
+*** SEGMENTOS
+*** -------------------------------------------------------------------------------------------------------------------------
+**/
+
+/* ************************* */
+/* ********* ACIVS ********* */
+/* ************************* */
+body#acivs header.bkl div.container { /*width: 100%;*/ width: 980px; margin: 0px auto !important; /*margin: 0px;*/ }
+
+/* ************************* */
+/* ******* UNICLASS ******** */
+/* ************************* */
+
+body#uniclass header.bkl { width: 100%; height: 70px; background: #C8C8C8; position: fixed; *left: 0; z-index: 9999; }
+body#uniclass header.bkl div.logo-segmento { width: 135px; height: 25px; margin-top: 33px; margin-left: 15px; }
+/* ---- Bot�es ---- */
+body#uniclass header.bkl div.btn-header { width: 70px; height: 70px; background: #747679; color: #fff; border: none; font-size: 11px; font-weight: bold; display: block; margin-bottom: 0; padding-left: 0; }
+body#uniclass header.bkl div.btn-sair { background: #747679;  margin-left: 0 }
+/* ----- Menu ----- */
+body#uniclass header.bkl nav.menu ul li.mnu { width: 70px; height: 70px; background: #747679; color: #fff; border: none; font-size: 11px; font-weight: bold;
+	display: block; float: left; margin-bottom: 0; padding-left: 0; }
+body#uniclass header.bkl nav.menu ul li.mnu.ativo,
+body#uniclass header.bkl nav.menu ul li.mnu:hover { background-color: #747679; }
+/* ----- Busca ----- */
+body#uniclass header.bkl div.busca-header { margin-top: 19px; margin-left: 30px; width: 320px; position: relative; }
+body#uniclass header.busca-header-exp div.busca-header {
+	width: 550px;
+	-webkit-transition: width 200ms ease-in;
+    -moz-transition: width 200ms ease-in;
+    -ms-transition: width 200ms ease-in;
+    -o-transition: width 200ms ease-in;
+    transition: width 200ms ease-in;
+}
+
+body#uniclass header.bkl div.busca-header input.busca-campo { 
+	padding: 8px 20px; 
+	position: absolute; 
+	border: 1px solid #747679;
+	-webkit-border-radius: 16px;
+	   -moz-border-radius: 16px;
+	        border-radius: 16px;
+}
+/*body#uniclass header.bkl div.busca-header input.busca-campo:focus { width: 550px; }*/
+/* ----- Acoes Rapidas ----- */
+body#uniclass .acoes-rapidas { position: absolute; margin-top: 5px; z-index: 999; }
+body#uniclass .acao-rapida { padding: 4px 10px; margin-left: 5px; float: left; }
+
+/* - Config/Perfil - */
+body#uniclass header.bkl span.ico-config img { border: 1px solid #919085; border-radius: 4px;}
+/* -- Bot�es alta disponibilidade -- */
+body#uniclass header.bkl ul.disponibilidade li a { background-color: #747679; }
+
+/* ************************* */
+/* ******* EMPRESAS ******** */
+/* ************************* */
+
+body#empresas header.bkl, body#poderPublico header.bkl, body#institucionais header.bkl, body#demaisEmpresas header.bkl { width: 100%; height: 70px; background: #efe9e5; position: fixed; *left: 0; z-index: 9999; }
+body#empresas header.bkl div.logo-segmento, body#poderPublico header.bkl div.logo-segmento, body#institucionais header.bkl div.logo-segmento, body#demaisEmpresas header.bkl div.logo-segmento { width: 135px; height: 25px; margin-top: 33px; margin-left: 15px; }
+/* ---- Bot�es ---- */
+body#empresas header.bkl div.btn-header, body#poderPublico header.bkl div.btn-header, body#institucionais header.bkl div.btn-header, body#demaisEmpresas header.bkl div.btn-header { width: 70px; height: 70px; background: #747679; color: #fff; border: none; font-size: 11px; font-weight: bold; display: block; margin-bottom: 0; padding-left: 0; }
+body#empresas header.bkl div.btn-sair, body#poderPublico header.bkl div.btn-sair, body#institucionais header.bkl div.btn-sair, body#demaisEmpresas header.bkl div.btn-sair { background: #003665; }
+/* ----- Menu ----- */
+body#empresas header.bkl nav.menu ul li.mnu, body#poderPublico header.bkl nav.menu ul li.mnu, body#institucionais header.bkl nav.menu ul li.mnu, body#demaisEmpresas header.bkl nav.menu ul li.mnu { width: 70px; height: 70px; background: #003665; color: #fff; border: none; font-size: 11px; font-weight: bold;	display: block; float: left; margin-bottom: 0; padding-left: 0; }
+
+body#empresas header.bkl nav.menu ul li.mnu.ativo, body#empresas header.bkl nav.menu ul li.mnu:hover, 
+body#poderPublico header.bkl nav.menu ul li.mnu.ativo, body#poderPublico header.bkl nav.menu ul li.mnu:hover, 
+body#institucionais header.bkl nav.menu ul li.mnu.ativo, body#institucionais header.bkl nav.menu ul li.mnu:hover,
+body#demaisEmpresas header.bkl nav.menu ul li.mnu.ativo, body#demaisEmpresas header.bkl nav.menu ul li.mnu:hover { background-color: #003665; }
+/* ----- Busca ----- */
+body#empresas header.bkl div.busca-header, body#poderPublico header.bkl div.busca-header, body#institucionais header.bkl div.busca-header, body#demaisEmpresas header.bkl div.busca-header { margin-top: 20px; margin-left: 30px; width: 190px; /*275px;*/ /* 320px */ position: relative; }
+body#empresas header.busca-header-exp div.busca-header, body#poderPublico header.busca-header-exp div.busca-header, body#institucionais header.busca-header-exp div.busca-header, body#demaisEmpresas header.busca-header-exp div.busca-header {
+	width: 550px;
+	-webkit-transition: width 200ms ease-in;
+    -moz-transition: width 200ms ease-in;
+    -ms-transition: width 200ms ease-in;
+    -o-transition: width 200ms ease-in;
+    transition: width 200ms ease-in;
+}
+
+body#empresas header.bkl div.busca-header input.busca-campo, body#poderPublico header.bkl div.busca-header input.busca-campo, body#institucionais header.bkl div.busca-header input.busca-campo, body#demaisEmpresas header.bkl div.busca-header input.busca-campo { padding: 8px 20px; position: absolute; border: 1px solid #ee7400;
+	-webkit-border-radius: 16px;
+	   -moz-border-radius: 16px;
+	        border-radius: 16px;
+}
+/*body#empresas header.bkl div.busca-header input.busca-campo:focus { width: 550px; }*/
+/* ----- Acoes Rapidas ----- */
+body#empresas .acoes-rapidas, body#poderPublico .acoes-rapidas, body#institucionais .acoes-rapidas, body#demaisEmpresas .acoes-rapidas { position: absolute; margin-top: 5px; z-index: 999; }
+body#empresas .acao-rapida, body#poderPublico .acao-rapida, body#institucionais .acao-rapida, body#demaisEmpresas .acao-rapida { padding: 4px 10px; margin-left: 5px; float: left; }
+
+/* - Config/Perfil - */
+body#empresas header.bkl span.ico-config img, body#poderPublico header.bkl span.ico-config img, body#institucionais header.bkl span.ico-config img, body#demaisEmpresas header.bkl span.ico-config img { border: 1px solid #ee7400; border-radius: 4px;
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+	   -mox-box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+	        box-shadow: 0 2px 2px rgba(0, 0, 0, .2); }
+body#empresas header.bkl .ico-configuracoes .content-config, body#poderPublico header.bkl .ico-configuracoes .content-config, body#institucionais header.bkl .ico-configuracoes .content-config, body#demaisEmpresas header.bkl .ico-configuracoes .content-config { width:290px; }
+body#empresas header.bkl .ico-configuracoes .content-config .dados .dados-perfil, body#institucionais header.bkl .ico-configuracoes .content-config .dados .dados-perfil, body#institucionais header.bkl .ico-configuracoes .content-config .dados .dados-perfil, body#demaisEmpresas header.bkl .ico-configuracoes .content-config .dados .dados-perfil { margin-left: 10px; }
+/* -- Info Login -- */
+body#empresas header.bkl .info-login .info-conta-select, body#poderPublico header.bkl .info-login .info-conta-select, body#institucionais header.bkl .info-login .info-conta-select, body#demaisEmpresas header.bkl .info-login .info-conta-select { text-align: right; width: 220px; /* 170px */ }
+/* -- Bot�es alta disponibilidade -- */
+body#empresas header.bkl ul.disponibilidade li a, body#poderPublico header.bkl ul.disponibilidade li a, body#institucionais header.bkl ul.disponibilidade li a, body#demaisEmpresas header.bkl ul.disponibilidade li a { background-color: #003665; }
+
+/* ************************* */
+/* ******* IBBA ******** */
+/* ************************* */
+
+body#ibba header.bkl { width: 100%; height: 70px; background: #efe9e5; position: fixed; *left: 0; z-index: 9999; }
+body#ibba header.bkl div.logo-segmento { width: 135px; height: 25px; margin-top: 33px; }
+/* ---- Bot�es ---- */
+body#ibba header.bkl div.btn-header { width: 70px; height: 70px; background: #747679; color: #fff; border: none; font-size: 11px; font-weight: bold; display: block; margin-bottom: 0; padding-left: 0; }
+body#ibba header.bkl div.btn-sair { background: #003763; }
+/* ----- Menu ----- */
+body#ibba header.bkl nav.menu ul li.mnu { width: 70px; height: 70px; background: #003763; color: #fff; border: none; font-size: 11px; font-weight: bold;
+	display: block; float: left; margin-bottom: 0; padding-left: 0; }
+body#ibba header.bkl nav.menu ul li.mnu.ativo,
+body#ibba header.bkl nav.menu ul li.mnu:hover { background-color: #003763; }
+/* ----- Busca ----- */
+body#ibba header.bkl div.busca-header { margin-top: 20px; margin-left: 30px; width: 290px; /* 320px */ position: relative; }
+body#ibba header.busca-header-exp div.busca-header {
+	width: 565px;
+	-webkit-transition: width 200ms ease-in;
+    -moz-transition: width 200ms ease-in;
+    -ms-transition: width 200ms ease-in;
+    -o-transition: width 200ms ease-in;
+    transition: width 200ms ease-in;
+}
+
+body#ibba header.bkl div.busca-header input.busca-campo { padding: 8px 20px; position: absolute; border: 1px solid #ee7400;
+	-webkit-border-radius: 16px;
+	   -moz-border-radius: 16px;
+	        border-radius: 16px;
+}
+/*body#ibba header.bkl div.busca-header input.busca-campo:focus { width: 565px; }*/
+/* ----- Acoes Rapidas ----- */
+body#ibba .acoes-rapidas { position: absolute; margin-top: 5px; z-index: 999; }
+body#ibba .acao-rapida { padding: 4px 10px; margin-left: 5px; float: left; }
+
+/* - Config/Perfil - */
+body#ibba header.bkl span.ico-config img { border: 1px solid #ee7400; border-radius: 4px;
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+	   -mox-box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+	        box-shadow: 0 2px 2px rgba(0, 0, 0, .2); }
+body#ibba header.bkl .ico-configuracoes .content-config { width:300px; }
+body#ibba header.bkl .ico-configuracoes .content-config .dados .dados-perfil { margin-left: 10px; }
+/* -- Info Login -- */
+body#ibba header.bkl .info-login .info-conta-select { text-align: right; width: 220px; /* 170px */ }
+/* -- Bot�es alta disponibilidade -- */
+body#ibba header.bkl ul.disponibilidade li a { background-color: #003763; }
+
+
+/* ************************* */
+/* ***** PERSONNALITE ****** */
+/* ************************* */
+
+body#person header.bkl { width: 100%; height: 70px; background: #e8e2d9; position: fixed; *left: 0; z-index: 9999; }
+body#person header.bkl div.logo-segmento { width: 135px; height: 25px; margin-top: 33px; margin-left: 15px; }
+/* ---- Bot�es ---- */
+body#person header.bkl div.btn-header { width: 70px; height: 70px; background: #747679; color: #fff; border: none; font-size: 11px; font-weight: bold; display: block; margin-bottom: 0; padding-left: 0; }
+body#person header.bkl div.btn-sair { background: #D0A967; }
+body#person header.bkl a.btn-nav:hover { color: #252222; }
+/* ----- Menu ----- */
+body#person header.bkl nav.menu ul li.mnu { width: 70px; height: 70px; background: #d1aa62; color: #fff; border: none; font-size: 11px; font-weight: bold;
+	display: block; float: left; margin-bottom: 0; padding-left: 0; }
+body#person header.bkl nav.menu ul li.mnu.ativo,
+body#person header.bkl nav.menu ul li.mnu:hover { background-color: #d1aa62; }
+/* ----- Busca ----- */
+body#person header.bkl div.busca-header input.busca-campo { padding: 8px 20px; position: absolute; border: 1px solid #876632;
+	-webkit-border-radius: 16px;
+	   -moz-border-radius: 16px;
+	        border-radius: 16px;
+}
+/* ----- Acoes Rapidas ----- */
+body#person .acoes-rapidas { position: absolute; margin-top: 5px; z-index: 999; }
+body#person .acao-rapida { padding: 4px 10px; margin-left: 5px; float: left; }
+body#person .acao-rapida.acao-rapida-produto { background-color: #876632; }
+body#person input.busca-acoes-rapidas:focus { border: 0; outline: 0; color:#464646; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+
+/* - Config/Perfil - */
+body#person header.bkl span.ico-config img { border: 1px solid #876632; border-radius: 4px;
+	-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+	   -mox-box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+	        box-shadow: 0 2px 2px rgba(0, 0, 0, .2); }
+/* -- Info Login -- */
+body#person header.bkl .info-login p.info-conta { color: #876632; border-color: #876632; }
+/* - Custom Select - */
+body#person header.bkl .custom-select select { color: #876632; }
+/* -- Bot�es alta disponibilidade -- */
+body#person header.bkl ul.disponibilidade li a { background-color: #d1aa62; color: #fff; }
+
+
+/* ************************* */
+/* ******** PRIVATE ******** */
+/* ************************* */
+
+body#private header.bkl { width: 100%; height: 70px; background: #E5E4E2; position: fixed; *left: 0; z-index: 9999; }
+body#private header.bkl div.logo-segmento { width: 164px; height: 25px; margin-top: 33px; margin-left: 16px; }
+/* ---- Bot�es ---- */ 
+body#private header.bkl a.btn-nav span.ico-header-menu { background-position: -30px 0; }
+body#private header.bkl a.btn-nav span.ico-header-seguranca { background-position: -30px -25px; background: none; font-size: 24px; margin: 0 0 3px 23px; width: 24px; }
+
+body#private header.bkl div.btn-header { width: 70px; height: 70px; background: #7C746C; color: #fff; border: none; font-size: 12px; font-weight: bold; display: block; margin-bottom: 0; padding-left: 0; }
+body#private header.bkl div.btn-sair { background: #5F5E55; }
+body#private header.bkl a.btn-nav { color: #FFFFFF; padding-top:15px; }
+body#private header.bkl a.btn-nav:hover { color: #FFFFFF; }
+
+body#private header.bkl div.btn-header-margin-ajuda{margin-right: 0; margin-left: 1px;}
+body#private header.bkl div.btn-header-ajuda{ width: 70px; height: 70px; background: #E5E4E2; outline: #a9a9a9; color: #003665; border: none; font-size: 12px; font-weight: bold; display: block; margin-bottom: 0; padding-left: 0; margin-left: 20px }
+body#private header.bkl div.btn-header-ajuda span.ico-header-ajuda{width: 59%;height: 42%;display: block;margin: 0 0 4px 15px;background: url(../img/sprite-btn-ajuda-pf.png); background-repeat: no-repeat; background-position: 10px -48px;}
+body#private header.bkl div.btn-header-ajuda:hover  span.ico-header-ajuda{width: 59%;height: 42%;display: block;margin: 0 0 4px 15px;background: url(../img/sprite-btn-ajuda-pf.png);background-repeat: no-repeat; background-position: 10px -48px;} 
+body#private header.bkl div.btn-header-ajuda:hover{background: #7C746C;}
+body#private header.bkl a.btn-nav-2{color: #464646; padding-top: 16px;}
+             
+body#private header.bkl a.btn-nav-2:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #5F5E55;
+}
+body#private header.bkl a.btn-nav-2:hover .ico-header-ajuda.icon-itaufonts_full_atendimento{
+                color: #FFF;
+}
+
+/* ----- Header ----- */
+body#private header.bkl .info-login { margin-left: 16px; margin-top: 19px; margin-right: 20px;}
+body#private header.bkl .ico-configuracoes { margin-top: 19px; margin-left: 19px; *margin-left: 60px;  }
+body#private header.bkl .info-conta {width: 154px; text-align: center;}
+body#private[assessor='true'] header.bkl .info-login {margin-left: 344px;}
+
+/* ----- Menu ----- */
+body#private header.bkl nav.menu ul li.mnu { width: 70px; height: 70px; background: #5F5E55; color: #ec7000; border: none; font-size: 12px; font-weight: bold;
+	display: block; float: left; margin-bottom: 0; padding-left: 0; }
+body#private header.bkl nav.menu ul li.mnu.ativo,
+
+/* ----- Busca ----- */
+body#private header.bkl div.busca-header input.busca-campo { 
+	padding: 9px 32px 9px 19px; 
+	color: #969696;
+	position: absolute; 
+	border: 1px solid #5F5E55;
+	-webkprivateit-border-radius: 16px;
+	   -moz-border-radius: 16px;
+	border-radius: 100px;
+	height: 32px;
+}
+body#private header span.lupa-busca{ color: #5F5E55; }
+body#private header div.busca-header .loader-busca {
+	margin-left: 495px
+}
+/* ----- Acoes Rapidas ----- */
+body#private .acoes-rapidas { position: absolute; margin-top: 5px; z-index: 999; }
+body#private .acao-rapida { padding: 4px 10px; margin-left: 5px; float: left; }
+
+/* - Config/Perfil - */
+header.bkl div.ico-configuracoes a {
+	border-radius: 4px;
+	background: #FFFFFF;
+	text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+	
+}
+body#private header.bkl div.ico-configuracoes div.dados a {
+	border: 1px solid #DD6100; 
+}
+
+body#private header.bkl div.ico-configuracoes a {
+	border: 1px solid #5F5E55;
+}
+
+
+body#varejo header.bkl span.ico-config.icon-itaufonts_full_usuario_perfil, 
+body#uniclass header.bkl span.ico-config.icon-itaufonts_full_usuario_perfil,
+body#person header.bkl span.ico-config.icon-itaufonts_full_usuario_perfil {
+    width: 30px;
+    height: 30px;
+    background: none;
+    display: block;
+    font-size: 24px;
+    padding: 3px;
+    color: #464646;
+    line-height: 24px;
+	border: none;
+}
+
+body#uniclass header.bkl div.ico-configuracoes div.dados a {
+	border: 1px solid #dd6100
+}
+
+body#uniclass header.bkl div.ico-configuracoes a {
+	border: 1px solid #747679
+}
+
+body#varejo header.bkl div.ico-configuracoes a {
+	border: 1px solid #dd6100
+}
+
+body#person header.bkl div.ico-configuracoes a {
+	border: 1px solid #876632
+}
+    
+body#private header.bkl span.ico-config.icon-itaufonts_full_usuario_perfil {
+    width: 30px;
+    height: 30px;
+    background: none;
+    display: block;
+    font-size: 24px;
+    padding: 3px;
+    color: #5F5E55;
+    line-height: 24px;
+	border: none;
+}
+
+/* -- Info Login -- */
+body#private header.bkl .info-login p.info-conta { 
+	color: #464646; 
+	border-color: #5F5E55
+}
+/* -- Bot�es alta disponibilidade -- */
+body#private header.bkl ul.disponibilidade li a { background-color: #e5ded5; color: #ec7000; }
+
+/* -- Barra de busca do Header -- */
+body#private header.bkl div.busca-header { margin-top: 19px; margin-left: 16px; width: 261px;}
+body#private header.busca-header-exp div.busca-header {width: 550px;}
+
+
+/* -- acerta a posi��o do menu para aparecer a mensagem de browser antigo -- */
+body.body-browser-antigo header.bkl{ top: 60px !important; }
+
+.tamanho-629 { width: 629px !important; }
+
+/* ----- Classes de ajustes no header para inclusão do botão ajuda ----- */
+
+body#empresas header.bkl .info-conta-select-diminuir{ text-align: right; width: 200px; }
+body#empresas header.bkl div.btn-header-margin-sair, body#ibba header.bkl{margin-right: 10px;}
+body#empresas header.bkl div.btn-header-margin-ajuda{margin-right: 0; margin-left: 1px;}
+body#empresas header.bkl div.btn-header-ajuda{ width: 70px; height: 70px; background: #efe9e5; color: #003665; border: none; font-size: 11px; font-weight: bold; display: block; margin-bottom: 0; padding-left: 0; }
+body#empresas header.bkl div.btn-header-ajuda:hover span.ico-header-ajuda{width: 59%;height: 42%;display: block;margin: 0 0 4px 15px;background: url(../img/sprite-btn-ajuda-header.png);background-repeat: no-repeat; background-position: 10px -48px;}
+body#empresas header.bkl div.btn-header-ajuda:hover{background: #003665;}
+header.bkl a.btn-nav-2 { text-decoration: none; color: #003665; height: 70px; display: block; padding: auto; padding-top: 10px; text-align: center; }
+header.bkl a.btn-nav-2:hover { text-decoration: none; color: #fff;}
+
+
+/* ----- Classes de ajustes no header para inclusão do botão ajuda PF ----- */
+
+body#varejo header.bkl div.btn-header-margin-ajuda{margin-right: 0; margin-left: 1px;}
+body#varejo header.bkl div.btn-header-ajuda{ width: 70px; height: 70px; background: #ee7400; outline:#ee7400; color: #FFF; border: none; font-size: 11px; font-weight: bold; display: block; margin-bottom: 0; padding-left: 0; margin-left: 23.1px;}
+body#varejo header.bkl a.btn-nav-2{color: #FFF; font-size: 19px;}
+body#varejo header.bkl div.btn-header-ajuda span.ico-header-ajuda{width: 59%;height: 42%;display: block;margin: 0 0 4px 15px;background: url(../img/sprite-btn-ajuda-pf.png); background-repeat: no-repeat; background-position: 10px -48px; color: #FFF;}
+body#varejo header.bkl div.btn-header-ajuda:hover{background: #cd5a10;}
+body#varejo header.bkl div.busca-header {width: 400px;}
+body#varejo header.busca-header-exp div.busca-header {width: 550px;}
+body#varejo header div.busca-header .loader-busca {
+    margin-left: 495px;
+}
+body#varejo header.bkl a.btn-nav-2:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+body#uniclass header.bkl div.btn-header-margin-ajuda{margin-right: 0; margin-left: 1px;}
+body#uniclass header.bkl div.btn-header-ajuda{ width: 70px; height: 70px; background: transparent; outline: #a9a9a9; color: #003665; border: none; font-size: 11px; font-weight: bold; display: block; margin-bottom: 0; padding-left: 0; margin-left: 28.1px }
+body#uniclass header.bkl a.btn-nav-2{color: #464646;}
+body#uniclass header.bkl div.btn-header-ajuda span.ico-header-ajuda{width: 59%;height: 42%;display: block;margin: 0 0 4px 15px;background: url(../img/sprite-btn-ajuda-pf.png); background-repeat: no-repeat; background-position: 10px -48px;}
+body#uniclass header.bkl div.btn-header-ajuda:hover  span.ico-header-ajuda{width: 59%;height: 42%;display: block;margin: 0 0 4px 15px;background: url(../img/sprite-btn-ajuda-pf.png);background-repeat: no-repeat; background-position: 10px -48px;} 
+body#uniclass header.bkl div.btn-header-ajuda:hover{background: #747679;}
+body#uniclass header.bkl div.busca-header {width: 255px;}
+body#uniclass header.busca-header-exp div.busca-header {width: 550px;}
+body#uniclass header div.busca-header .loader-busca {
+    margin-left: 495px;
+}
+body#uniclass header.bkl a.btn-nav-2:hover {
+    text-decoration: none;
+    color: #fff;
+    background: #747679;
+}
+body#uniclass header.bkl a.btn-nav-2:hover .ico-header-ajuda.icon-itaufonts_full_atendimento{
+	color: #FFF;
+}
+
+body#person header.bkl div.btn-header-margin-ajuda{margin-right: 0; margin-left: 1px;}
+body#person header.bkl div.btn-header-ajuda{ width: 70px; height: 70px; background: #e8e2d9;outline: #e8e2d9; color: #003665; border: none; font-size: 11px; font-weight: bold; display: block; margin-bottom: 0; padding-left: 0; margin-left: 25px;}
+body#person header.bkl a.btn-nav-2{color: #876632; padding-top: 13px; color: #464646;}
+body#person header.bkl div.btn-header-ajuda span.ico-header-ajuda{width: 59%;height: 42%;display: block;margin: 0 0 4px 15px;background: url(../img/sprite-btn-ajuda-pf.png); background-repeat: no-repeat; background-position: -21px -72px; }
+body#person header.bkl div.btn-header-ajuda:hover  span.ico-header-ajuda{width: 59%;height: 42%;display: block;margin: 0 0 4px 15px;background: url(../img/sprite-btn-ajuda-pf.png);background-repeat: no-repeat; background-position: 10px -48px;}
+body#person header.bkl div.btn-header-ajuda:hover .btn-nav-2{ color: #464646; }
+body#person header.bkl div.btn-header-ajuda:hover{background: #d1aa62;}
+body#person header.bkl div.busca-header {width: 390px;}
+body#person header.busca-header-exp div.busca-header {width: 550px;}
+body#person header div.busca-header .loader-busca {
+    margin-left: 495px;
+}
+body#person header.bkl a.btn-nav-2:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ajustes para buscas rapidas */
+
+header.busca-header-exp #codigoDeBarras {
+    width: 400px;
+}
+.busca-auto-complete ul .busca-elemento-fixo {
+    width: 486px;
+}
+
+header.busca-header-exp #nomeRecarga {
+    width: 400px;
+}
+
+.busca-listagem-textCartao {
+    margin-left: -192px;
+}
+.busca-auto-complete .acoesRapidasErro #contrateCG {
+	color: black;
+	text-decoration: underline;
+    position: relative;
+    left: 127px;
+    top: -15px;
+}
+
+/* ----- fim Classes de ajustes no header para inclusão do botão ajuda PF ----- */
+
+#varejo header.bkl div.btn-header-ajuda span.ico-header-ajuda, #uniclass header.bkl div.btn-header-ajuda span.ico-header-ajuda, #person header.bkl div.btn-header-ajuda span.ico-header-ajuda, #private header.bkl div.btn-header-ajuda span.ico-header-ajuda{		
+	background: none !important;		
+	font-size: 26px;		
+	color: #464646;		
+}
+#varejo header.bkl a.btn-nav span.ico-header-menu, #uniclass header.bkl a.btn-nav span.ico-header-menu, #person header.bkl a.btn-nav span.ico-header-menu, #private header.bkl a.btn-nav span.ico-header-menu{
+	background: none;
+}
+
+#varejo header.bkl div.btn-header-ajuda, #uniclass header.bkl div.btn-header-ajuda, #person header.bkl div.btn-header-ajuda, #private header.bkl div.btn-header-ajuda{
+	position: absolute;
+	top: 0;
+    right: 70px;
+}
+
+#varejo header.bkl > .container, #uniclass header.bkl > .container, #person header.bkl > .container, #private header.bkl > .container {
+	position: relative;
+}
+
+body#varejo header.bkl div.btn-sair, body#uniclass header.bkl div.btn-sair, body#person header.bkl div.btn-sair, body#private header.bkl div.btn-sair{
+	position: absolute;
+	top: 0;
+    right: 0;
+}

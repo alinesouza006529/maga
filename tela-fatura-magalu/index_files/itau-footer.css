@@ -1,0 +1,86 @@
+/**
+*** ---------------------
+*** Footer Itaú - Principal
+*** Versão: v1.0.0
+*** ---------------------
+**/
+
+footer div.container { width: 980px; margin: 0 0 0 10px; }
+
+footer { width: 100%; min-width: 1000px; height: 35px; margin-top: 20px; background: #f2f2f2; border-top: 1px solid #c7c7c7; position: relative; z-index: 9998; }
+
+footer.footer-fix { position: fixed; bottom: 0; left: 0; }
+
+footer ul,
+footer ul.no-bullet { margin-left: -40px!important; }
+footer ul li,
+footer ul.no-bullet li { background: none!important; display: inline; }
+
+footer ul.menu { margin-left: -40px; margin-top: 10px; }
+footer ul.menu li { display: inline; margin-right: 30px; background: none; padding-left: 0; }
+
+footer ul.social { margin: 8px 0 0 0; }
+footer ul.social li { background: url("../img/sprite-social.png") 0 0 no-repeat!important; height: 16px; width: 16px; margin-left: 2px;
+	padding-left: 0; list-style: none; display: inline-block; float/*\**/: left\9; }
+footer ul.social li.facebook { background-position: 0 0!important; }
+footer ul.social li.twitter { background-position: -16px 0!important; }
+footer ul.social li.youtube { background-position: -32px 0!important; }
+footer ul.social li.instagram { background-position: -48px 0!important; }
+footer ul.social li a { display: block; height: 16px; width: 16px; }
+footer ul.social li a:hover { background: transparent; }
+
+/* Footer - Convivência (sem HTML5) */
+div.footer { width: 100%; min-width: 1000px; height: 35px; margin-top: 20px; background: #f2f2f2; border-top: 1px solid #c7c7c7; position: relative; z-index: 9998; }
+
+div.footer.footer-fix { position: fixed; bottom: 0; left: 0; }
+
+div.footer ul,
+div.footer ul.no-bullet { margin-left: -40px!important; }
+div.footer ul li,
+div.footer ul.no-bullet li { background: none!important; display: inline; }
+
+div.footer ul.menu { margin-left: -40px; margin-top: 10px; }
+div.footer ul.menu li { display: inline; margin-right: 30px; background: none; padding-left: 0; }
+
+div.footer ul.social { margin: 8px 0 0 0; }
+div.footer ul.social li { background: url("../img/sprite-social.png") 0 0 no-repeat!important; height: 16px; width: 16px; margin-left: 2px;
+    padding-left: 0; list-style: none; display: inline-block; float/*\**/: left\9; }
+div.footer ul.social li.facebook { background-position: 0 0!important; }
+div.footer ul.social li.twitter { background-position: -16px 0!important; }
+div.footer ul.social li.youtube { background-position: -32px 0!important; }
+div.footer ul.social li.instagram { background-position: -48px 0!important; }
+div.footer ul.social li a { display: block; height: 16px; width: 16px; }
+div.footer ul.social li a:hover { background: transparent; }
+
+/**
+*** -------------------------------------------------------------------------------------------------------------------------
+*** SEGMENTOS
+*** -------------------------------------------------------------------------------------------------------------------------
+**/
+
+/* ************************* */
+/* ********* ACIVS ********* */
+/* ************************* */
+body#acivs footer div.container { /*width: 100%;*/ width: 980px; margin: 0px auto; /*margin: 0px;*/ }
+
+/* ************************** */
+/* ********* PERSON ********* */
+/* ************************** */
+
+body#person footer ul.social li.facebook,
+body#person div.footer ul.social li.facebook {
+  background-position: 0 -16px !important;
+}
+body#person footer ul.social li.twitter,
+body#person div.footer ul.social li.twitter {
+  background-position: -16px -16px !important;
+}
+body#person footer ul.social li.youtube,
+body#person div.footer ul.social li.youtube {
+  background-position: -32px -16px !important;
+}
+body#person footer.footer-full a.btn-no-shadow:hover,
+body#person div.footer-full a.btn-no-shadow:hover {
+  background: #a37c29;
+  color: #fff;
+}
